@@ -107,7 +107,10 @@ def get_stats(gdf, coeff_ampl, coeff_conv):
     gdf['perimeter'] = gdf['geometry'].length
     tot_perimeter = gdf['perimeter'].sum()
     
-    columns_drop = ["boundary", "convex_hull", "convex_boundary", "convex_area", "centroid", "lat", "lon"]
+    if ("lat" in gdf.columns) or ("lon" in gdf.columns):
+        columns_drop = ["boundary", "convex_hull", "convex_boundary", "convex_area", "centroid", "lat", "lon"]
+    else:
+        columns_drop = ["boundary", "convex_hull", "convex_boundary", "convex_area", "centroid"]
     gdf = gdf.drop(columns_drop, axis=1)
     
     gdf = gdf.reset_index()

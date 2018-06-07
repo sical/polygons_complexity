@@ -1,0 +1,12 @@
+{
+	"lon":260998.116843,
+	"lat":6251096.505848,
+	"epsg":"espg:3857",
+	"radius":800,
+	"irregularity":0.001,
+	"spikeyness": 0.001,
+	"vertices":3,
+	"path_shp":"./shapes/",
+	"path_img":"./images/",
+	"iteration":10
+}
