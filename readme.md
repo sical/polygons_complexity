@@ -14,23 +14,23 @@ Find parameters to quantify/qualify the complexity of a polygon:
 * Number of vertices or edges
 * Centroid
 * Frequency of vibration (*normalized notches*) (**see paper**):
-"*Measure the vibration of polygon’s boundary. “Notches describe the non-convex parts of a polygon. The maximum number of notches that occur on a polygon pol depend on its number of vertices*." Notches are vertex where an interior angle larger than $\pi$:
+"*Measure the vibration of polygon’s boundary. “Notches describe the non-convex parts of a polygon. The maximum number of notches that occur on a polygon pol depend on its number of vertices*." Notches are vertex where an interior angle larger than ![pi](./math_formulas/pi.gif):
 
-  > $notches_{norm}(pol) = \frac{notches(pol)}{vertices(pol)-3}$
+  > ![notches](./math_formulas/notches.gif)
 
 * "*The fewer notches that occur, the smoother the boundary is. If notchesnorm is 0, the polygon is convex. Similar to low values of notches norm, high values indicate a smooth boundary*"
 * Amplitude (*ampl*) of  polygon (*pol*) vibration (**see paper**):
 "*The frequency of the vibration makes no statement with respect to the intensity of the vibration. In order to quantify this amplitude, we investigate the increase of the boundary of the polygon compared to the boundary of its convex hull*":
 
-  > $ampl(pol) = \frac{boundary(pol)-boundary(convexhull(pol)}{boundary(pol)}$
+  > ![amplitude](./math_formulas/amplitude.gif)
 
 * Deviation from convex hull (**see paper**):
 "*The two parameters introduced before describe the local vibration of a spatial object. The global shape of a spatial object is however another aspect that intuitively influences the rating of the complexity of the spatial object. In order to obtain a measure for this type of global complexity, we use the convex hull of the polygon again*":
 
-  > $conv(pol)=\frac{area(convexhull(pol)) - area(pol)}{area(convexhull(pol))}$
+  > ![deviation](./math_formulas/deviation.gif)
 
 * Complexity (**see paper**):
-  > $complexity(pol)=coef*ampl(pol)*freq(pol)+coef*conv(pol)$
+  > ![complexity](./math_formulas/complexity.gif)
 
 ## Structure of directory
 If you git clone the project, you will have everything you need.
