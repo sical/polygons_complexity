@@ -13,6 +13,13 @@ We develop functions to measure the complexity and functions to export results a
 
 > These parameters can be changed using *params.json* in *params* directory.
 
+> ***WARNING***: this script needs more tests (especially to block the rendering of figures in Ipython console and avoid this kind of warning:
+```
+RuntimeWarning: More than 20 figures have been opened.
+Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory.
+(To control this warning, see the rcParam `figure.max_open_warning`).
+ max_open_warning, RuntimeWarning)
+```
 ## Calculation
 Find parameters to quantify/qualify the complexity of a polygon:
 * Number of polygon
