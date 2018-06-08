@@ -146,7 +146,7 @@ def complexity(shapes, images, coeff_ampl, coeff_conv, str_img):
         gdf = gpd.GeoDataFrame.from_file(shape)
         dict_complexity, gdf = get_stats(gdf, coeff_ampl, coeff_conv)
         name = os.path.basename(shape)
-        name = name.split(".")[0]
+        name = name.replace(".shp","")
         gdf['name'] = name
         gdf['img'] = ''
 #        gdf = img_str(gdf, images, name, str_img)

@@ -58,6 +58,7 @@ def generatePolygon( ctrX, ctrY, aveRadius, irregularity, spikeyness, numVerts, 
         points.append((x,y))
     
         angle = angle + angleSteps[i]
+        
     #Create polygon and GeoDataframe
     poly = Polygon(points)
     dict_gdf = {
@@ -76,7 +77,9 @@ def generatePolygon( ctrX, ctrY, aveRadius, irregularity, spikeyness, numVerts, 
     name = name + ".shp"
     name = os.path.join(path_shp, name)
     img = os.path.join(path_img, img)
-    fig = gdf.plot()
+
+    fig = gdf.plot(legend=False, color="white", edgecolor="black", linewidth=7)
+
     fig.axes.get_yaxis().set_visible(False)
     fig.axes.get_xaxis().set_visible(False)
     fig = fig.get_figure()

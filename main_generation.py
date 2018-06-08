@@ -35,11 +35,3 @@ if __name__ == "__main__":
     for x in possibilities:
         irregularity,spikeyness,vertices = x[0], x[1], x[2]
         generatePolygon(lon,lat,radius,irregularity,spikeyness,vertices,path_shp, path_img, epsg)
-    
-#    for i in range(1,iteration):
-#        spikeyness = [spikeyness*i for i in range(1,iteration)]
-#        irregularity = irregularity*i
-#        vertices = 
-#        
-#
-#    points = generatePolygon(lon,lat,radius,irregularity,spikeyness,vertices,path_shp, path_img, epsg)

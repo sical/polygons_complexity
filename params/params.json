@@ -8,5 +8,5 @@
 	"vertices":3,
 	"path_shp":"./shapes/",
 	"path_img":"./images/",
-	"iteration":10
+	"iteration":20
 }

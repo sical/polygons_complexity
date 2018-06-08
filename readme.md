@@ -6,6 +6,13 @@ In order to measure the complexity of polygons, we studied a paper and a QGIS pl
 
 We develop functions to measure the complexity and functions to export results as statistical tables (*with possibility to chose the export format: html, latex, ...*) included in the *complexity* module.
 
+> There's the possibility to generate random polygons using ***main_generator***. This script will generate *.shp* files and *.png* files that could be used for complexity measures. The script plays with 3 parameters (*script based on this [source](https://stackoverflow.com/questions/8997099/algorithm-to-generate-random-2d-polygon), by Mike Ounsworth*):
+  >* irregularity,
+  >* spikeyness,
+  >* number of vertices
+
+> These parameters can be changed using *params.json* in *params* directory.
+
 ## Calculation
 Find parameters to quantify/qualify the complexity of a polygon:
 * Number of polygon

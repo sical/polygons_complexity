@@ -1,3 +1,5 @@
 *.tex
 *.html
 /__pycache__/*
+/shapes/*
+/images/*
